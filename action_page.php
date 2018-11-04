@@ -9,7 +9,7 @@
 	<?php echo '\documentclass[',$_POST["fontSize"],']{article}'; ?><br>
 	<?php echo '\title{',$_POST["docTitle"],'}'; ?><br>
 	<?php echo '\author{',$_POST["author"],'}'; ?><br>
-	
+<!--	Test comment -->
 	
 </body>
 </html>
