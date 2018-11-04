@@ -8,7 +8,7 @@
 <body>
 	<form action="action_page.php" method="post">
 		<h1>LaTeX Document Generator</h1>
-		<h2>testing</h2>
+		
 		<form action="/action_page.php" 
 			  target="_blank">
 		
@@ -38,6 +38,11 @@
 			   type="number"
 			   name="fontSize"
 			   value="12">
+		<br><br>
+		
+			
+		Font Size (pt):<br>
+		<input type="checkbox" name="includeAbstract" value="Yes"> Include Abstract<br>
 		<br><br>
 			
 		<input type="submit" value="Submit">
