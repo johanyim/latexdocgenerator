@@ -44,10 +44,23 @@
 		Font Size (pt):<br>
 		<input type="checkbox" name="includeAbstract" value="Yes"> Include Abstract<br>
 		<br><br>
-			
+		
+		<input type="text" id="member" name="member" value="">Number of members: (max. 10)<br/>
+		<a href="#" id="filldetails" onclick="addFields()">Fill Details</a>
+    	<div id="container"/>
+		
 		<input type="submit" value="Submit">
 		
 		</form>
+		<script src="add_fields.js"></script>
+		
+		
+	
+	
+</form> 
+</body>
+</html>
+
 	
 	
 </form> 
