@@ -46,13 +46,16 @@
 		<br><br>
 		
 		<input type="text" id="member" name="member" value="">Number of members: (max. 10)<br/>
+			<script src="add_fields.js"></script>
 		<a href="#" id="filldetails" onclick="addFields()">Fill Details</a>
+			
     	<div id="container"/>
-		
+<!--		Placement of container div tag changes the submit button-->
 		<input type="submit" value="Submit">
+			
 		
 		</form>
-		<script src="add_fields.js"></script>
+		
 		
 		
 	
