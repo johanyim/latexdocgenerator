@@ -6,7 +6,7 @@
 </head>
 
 <body>
-	<form action="action_page.php" method="post">
+	<form name="myForm" action="action_page.php" method="post">
 		<h1>LaTeX Document Generator</h1>
 		
 		<form action="/action_page.php" 
@@ -28,8 +28,7 @@
 			
 		Date:<br>
 		<input type="date"
-			   name="date"
-			   >
+			   name="date">
 		<br><br>
 		
 			
@@ -38,19 +37,42 @@
 			   type="number"
 			   name="fontSize"
 			   value="12">
+			
 		<br><br>
 		
 			
 		Font Size (pt):<br>
 		<input type="checkbox" name="includeAbstract" value="Yes"> Include Abstract<br>
-		<br><br>
-		
-		<input type="text" id="member" name="member" value="">Number of members: (max. 10)<br/>
-			<script src="add_fields.js"></script>
-		<a href="#" id="filldetails" onclick="addFields()">Fill Details</a>
+		<br>
 			
-    	<div id="container"/>
-<!--		Placement of container div tag changes the submit button-->
+		
+			
+		<input type="button" id="sectionButton" value="Add Section Title">	
+			
+			<script>
+			
+			var number = 1;
+			
+			document.getElementById("sectionButton").onclick=function(){
+				
+				var secDiv = document.getElementById("secContainer");
+				var input = document.createElement("input");
+				input.type = "text";
+				input.placeholder =  "Section " + number;
+				input.name = "section" + number;
+				secDiv.appendChild(input);
+				secDiv.appendChild(document.createElement("br"));
+				number = number + 1;
+				
+				
+				
+			}
+			
+			</script>
+			
+		<div id="secContainer"></div>
+			
+		<br>
 		<input type="submit" value="Submit">
 			
 		
